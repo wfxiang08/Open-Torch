@@ -284,7 +284,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "source/Open Torch-Prefix.pch";
-				INFOPLIST_FILE = "Open Torch/Open Torch-Info.plist";
+				INFOPLIST_FILE = "source/Open Torch-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -299,7 +299,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "source/Open Torch-Prefix.pch";
-				INFOPLIST_FILE = "Open Torch/Open Torch-Info.plist";
+				INFOPLIST_FILE = "source/Open Torch-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
