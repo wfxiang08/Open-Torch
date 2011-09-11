@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38848CD8141D300F006C9489 /* app-name.png in Resources */ = {isa = PBXBuildFile; fileRef = 38848CD7141D300F006C9489 /* app-name.png */; };
-		38C1A5E01365EB40003851F5 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38C1A5DF1365EB40003851F5 /* License.txt */; };
+		38C1A5E01365EB40003851F5 /* UNLICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 38C1A5DF1365EB40003851F5 /* UNLICENSE */; };
 		38C205FD1365DBEA005C787C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C205FC1365DBEA005C787C /* UIKit.framework */; };
 		38C205FF1365DBEA005C787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C205FE1365DBEA005C787C /* Foundation.framework */; };
 		38C206011365DBEA005C787C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C206001365DBEA005C787C /* CoreGraphics.framework */; };
@@ -26,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38848CD7141D300F006C9489 /* app-name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-name.png"; sourceTree = SOURCE_ROOT; };
-		38C1A5DF1365EB40003851F5 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		38848CD7141D300F006C9489 /* app-name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-name.png"; path = "source/app-name.png"; sourceTree = SOURCE_ROOT; };
+		38C1A5DF1365EB40003851F5 /* UNLICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = UNLICENSE; path = ../UNLICENSE; sourceTree = "<group>"; };
 		38C205F81365DBEA005C787C /* Open Torch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Torch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C205FC1365DBEA005C787C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		38C205FE1365DBEA005C787C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,10 +42,10 @@
 		38C206111365DBEA005C787C /* Open_TorchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Open_TorchViewController.h; sourceTree = "<group>"; };
 		38C206121365DBEA005C787C /* Open_TorchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Open_TorchViewController.m; sourceTree = "<group>"; };
 		38C206151365DBEA005C787C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Open_TorchViewController.xib; sourceTree = "<group>"; };
-		38C206291365E077005C787C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
-		38C2062B1365E07D005C787C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
-		38C2062D1365E091005C787C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
-		38C2062F1365E096005C787C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		38C206291365E077005C787C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		38C2062B1365E07D005C787C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		38C2062D1365E091005C787C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		38C2062F1365E096005C787C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		38C206331365E1BA005C787C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -103,9 +103,10 @@
 				38C206121365DBEA005C787C /* Open_TorchViewController.m */,
 				38C206141365DBEA005C787C /* Open_TorchViewController.xib */,
 				38C206031365DBEA005C787C /* Supporting Files */,
-				38C1A5DF1365EB40003851F5 /* License.txt */,
+				38C1A5DF1365EB40003851F5 /* UNLICENSE */,
 			);
-			path = "Open Torch";
+			name = "Open Torch";
+			path = source;
 			sourceTree = "<group>";
 		};
 		38C206031365DBEA005C787C /* Supporting Files */ = {
@@ -188,7 +189,7 @@
 				38C2062C1365E07D005C787C /* Icon@2x.png in Resources */,
 				38C2062E1365E091005C787C /* Default@2x.png in Resources */,
 				38C206301365E096005C787C /* Default.png in Resources */,
-				38C1A5E01365EB40003851F5 /* License.txt in Resources */,
+				38C1A5E01365EB40003851F5 /* UNLICENSE in Resources */,
 				38848CD8141D300F006C9489 /* app-name.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +283,11 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Open Torch/Open Torch-Prefix.pch";
+				GCC_PREFIX_HEADER = "source/Open Torch-Prefix.pch";
 				INFOPLIST_FILE = "Open Torch/Open Torch-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -296,9 +298,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Open Torch/Open Torch-Prefix.pch";
+				GCC_PREFIX_HEADER = "source/Open Torch-Prefix.pch";
 				INFOPLIST_FILE = "Open Torch/Open Torch-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
