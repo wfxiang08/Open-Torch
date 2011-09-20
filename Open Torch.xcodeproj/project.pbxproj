@@ -23,6 +23,7 @@
 		38C2062E1365E091005C787C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C2062D1365E091005C787C /* Default@2x.png */; };
 		38C206301365E096005C787C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C2062F1365E096005C787C /* Default.png */; };
 		38C206341365E1BA005C787C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C206331365E1BA005C787C /* AVFoundation.framework */; };
+		38C2726314294C6B00994AD4 /* OTTorchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C2726214294C6B00994AD4 /* OTTorchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		38C2062D1365E091005C787C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		38C2062F1365E096005C787C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		38C206331365E1BA005C787C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		38C2726114294C6B00994AD4 /* OTTorchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTTorchView.h; sourceTree = "<group>"; };
+		38C2726214294C6B00994AD4 /* OTTorchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTTorchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				38C2060E1365DBEA005C787C /* MainWindow.xib */,
 				38C206111365DBEA005C787C /* Open_TorchViewController.h */,
 				38C206121365DBEA005C787C /* Open_TorchViewController.m */,
+				38C2726114294C6B00994AD4 /* OTTorchView.h */,
+				38C2726214294C6B00994AD4 /* OTTorchView.m */,
 				38C206141365DBEA005C787C /* Open_TorchViewController.xib */,
 				38C206031365DBEA005C787C /* Supporting Files */,
 				38C1A5DF1365EB40003851F5 /* UNLICENSE */,
@@ -204,6 +209,7 @@
 				38C2060A1365DBEA005C787C /* main.m in Sources */,
 				38C2060D1365DBEA005C787C /* Open_TorchAppDelegate.m in Sources */,
 				38C206131365DBEA005C787C /* Open_TorchViewController.m in Sources */,
+				38C2726314294C6B00994AD4 /* OTTorchView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +291,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "source/Open Torch-Prefix.pch";
 				INFOPLIST_FILE = "source/Open Torch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -296,12 +303,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "source/Open Torch-Prefix.pch";
 				INFOPLIST_FILE = "source/Open Torch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

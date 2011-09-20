@@ -64,12 +64,18 @@
 
 - (void)turnTorchOn
 {
-  // check if we have a camera and torch
   AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-  if (!device || ![device hasTorch] || ![device hasFlash])
-    return;
+  if (device && [device hasTorch] && [device hasFlash]) {
+    [self turnTorchOnInFlashMode];
+  } else {
+    [self turnTorchOnInScreenMode];
+  }
+}
+
+- (void)turnTorchOnInFlashMode
+{
+  AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
   
-  // setup a capcha session
   if (!captureSession) {
     AVCaptureDeviceInput *flashInput = [AVCaptureDeviceInput deviceInputWithDevice:device error: nil];
     AVCaptureVideoDataOutput *output = [[[AVCaptureVideoDataOutput alloc] init] autorelease];
@@ -89,7 +95,6 @@
     [captureSession commitConfiguration];
   }
   
-  // turn it on
   [captureSession startRunning];
   
   [device lockForConfiguration:nil];
@@ -98,12 +103,19 @@
   [device unlockForConfiguration];
 }
 
+- (void)turnTorchOnInScreenMode
+{
+  self.viewController.screenTorchView.screenTorchOn = YES;
+}
+
 - (void)turnTorchOff
 {
   if (!captureSession)
     return;
   
   [captureSession stopRunning];
+  
+  self.viewController.screenTorchView.screenTorchOn = NO;
 }
 
 - (void)dealloc

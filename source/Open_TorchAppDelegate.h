@@ -40,6 +40,8 @@
 }
 
 - (void)turnTorchOn;
+- (void)turnTorchOnInFlashMode;
+- (void)turnTorchOnInScreenMode;
 - (void)turnTorchOff;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

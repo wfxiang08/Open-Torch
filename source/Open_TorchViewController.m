@@ -33,9 +33,11 @@
 #import "Open_TorchViewController.h"
 
 @implementation Open_TorchViewController
+@synthesize screenTorchView;
 
 - (void)dealloc
 {
+    [screenTorchView release];
     [super dealloc];
 }
 
@@ -59,6 +61,7 @@
 
 - (void)viewDidUnload
 {
+    [self setScreenTorchView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
